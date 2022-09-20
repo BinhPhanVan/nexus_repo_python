@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: python-bchtq
+Version: 0.0.1
+Summary: Sum function
+Home-page: https://github.com/pypa/sampleproject
+Author: BinhPhanVan
+Author-email: phanvanbinh192837@gmail.com
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Full description
