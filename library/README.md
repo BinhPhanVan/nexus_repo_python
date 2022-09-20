@@ -1,5 +1,5 @@
 1. Create structure package
-'''
+```
     /packaging_tutorial
         /example_pkg
             __init__.py
@@ -7,13 +7,13 @@
         setup.py
         LICENSE
         README.md
-'''
+```
 2. In file __init__.py
-    '''
+    ```
         from app import *
-    '''
+    ```
 3. In file app.py
-    '''
+    ```
 
     def sum(a, b):
         return a + b
@@ -29,9 +29,9 @@
         print("\tTran Nguyen Anh Trinh")
         print("\tLe Van Huy")
 
-    '''
+    ```
 4. In file setup.py
-    '''
+    ```
     import setuptools
 
     setuptools.setup(
@@ -51,11 +51,11 @@
         ],
     )
 
-    '''
+    ```
 5. In file README.md
     Insert content for funtion, which you write in file app.py
 6. In file LICENSE
-    '''
+    ```
     MIT License
 
     Copyright (c) 2019 minhhahao
@@ -78,31 +78,32 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-    '''
+    ```
 7. Install library
-    '''
+    ```
     pip install -U setuptools wheel
-    '''
+    ```
 8. Package file
-    '''
+    ```
     python setup.py sdist bdist_wheel
-    '''
+    ```
 9. Upload distribution archives
-    '''
+    ```
     pip install -U twine
 
     python -m twine upload --repository-url http://localhost:8081/repository/<repo-name>/ dist/*
-    '''
+    ```
 10. In windows 
     create file pip.ini in path :   C:\ProgramData\pip
     with content
-    '''
+    ```
     [global]
     index = http://localhost:8081/repository/<repo-name>/pypi
     index-url = http://localhost:8081/repository/<repo-name>/simple
-    '''
+    ```
 11. Share localhost with ngrok
 12. Documentation
+
     (viblo)[https://viblo.asia/p/huong-dan-tao-package-python-RnB5pBvDZPG?fbclid=IwAR2abgXrSTj1U_pSQm30xfYtLgZe5duMIHhYf11C18OEdC7-BaRpQxt5wpY#_upload-distribution-archives-4]
     (sonatype)[https://help.sonatype.com/repomanager3/nexus-repository-administration/formats/pypi-repositories?fbclid=IwAR0i3f2nT37aD3KL6NYWKkmD6rWw_GPlfy885mib2__6yWTpoQL9C3whe08]
     (github)[https://github.com/renardeinside/nexus_pypi_repo_example?fbclid=IwAR2qi_2Ox7432cWPrxpByPr2msGLmOVzVDFngV2ZKDeK9R3d9b5vz4ljyuI]
