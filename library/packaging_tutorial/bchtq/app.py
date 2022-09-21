@@ -1,5 +1,3 @@
-from traceback import print_tb
-
 def sum(a, b):
     return a + b
 

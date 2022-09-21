@@ -1,1 +1,4 @@
-name = 'test_sum'
+from unicodedata import name
+
+
+name = 'python-bchtq'

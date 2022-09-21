@@ -1,8 +1,8 @@
 LICENSE
 README.md
 setup.py
-example_pkg/__init__.py
-example_pkg/app.py
+bchtq/__init__.py
+bchtq/app.py
 python_bchtq.egg-info/PKG-INFO
 python_bchtq.egg-info/SOURCES.txt
 python_bchtq.egg-info/dependency_links.txt
