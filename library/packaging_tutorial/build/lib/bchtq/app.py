@@ -11,3 +11,6 @@ def member_team():
     print("\tNguyen Thanh Co")
     print("\tTran Nguyen Anh Trinh")
     print("\tLe Van Huy")
+
+def count_number():
+    return 5
